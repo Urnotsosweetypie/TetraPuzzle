@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loading-container">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading...</div>
+</div>
+
+<!-- Your page content here -->
+<div style="display: none;">
+    <!-- Your content goes here -->
+</div>
+
+<script>
+    // Simulate page load delay
+    setTimeout(function() {
+        document.querySelector('.loading-container').style.display = 'none';
+        document.querySelector('div[style="display: none;"]').style.display = 'block';
+    }, 3000); // Change 3000 to desired milliseconds of loading time
+</script>
+</body>
+</html>
